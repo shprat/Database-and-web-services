@@ -1,0 +1,40 @@
+Website: http://clabsql.clamv.jacobs-university.de/~prshah/
+
+Index page: first page displayed when you click the above link it is a navigation page with details about the aims and services of the website
+Link: http://clabsql.clamv.jacobs-university.de/~prshah/index.html
+
+Imprint page: page with author details as well the disclaimer (also shown in footer of the index page) the imprint page is accessible from the index page by clicking hyperlink ‘imprint page’ 
+Link: http://clabsql.clamv.jacobs-university.de/~prshah/imprint.html
+
+CSS file: used for the layout of the website i.e. index.html controlling how the html elements look in the browser
+Link: http://clabsql.clamv.jacobs-university.de/~prshah/style.css
+
+Image folder: contains the images used for design the site
+Link:  http://clabsql.clamv.jacobs-university.de/~prshah/img/
+
+links for the site
+maintenaince page
+http://clabsql.clamv.jacobs-university.de/~prshah/maintenance.html
+
+Entity forms
+member form
+http://clabsql.clamv.jacobs-university.de/~prshah/Member.html
+
+teacher form 
+http://clabsql.clamv.jacobs-university.de/~prshah/teacher.html
+
+relationship forms
+Borrows form
+http://clabsql.clamv.jacobs-university.de/~prshah/borrows.php
+
+links for search page
+http://clabsql.clamv.jacobs-university.de/~prshah/search.php
+
+links for query result page
+http://clabsql.clamv.jacobs-university.de/~prshah/searching.php?search=fantasy
+(can put ?search = __ as any book_id,name,author or section from database books only one attribute value at a time)
+
+single value details page
+http://clabsql.clamv.jacobs-university.de/~prshah/viewresultdetails.php?book_id=5
+(can put ?book_id = __ as any id from database books)
+Note: please connect to eduroam while visiting these links

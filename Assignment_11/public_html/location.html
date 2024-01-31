@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1440, maximum-scale=1.0" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+ 
+    <style>
+        html,
+        body {
+            height: 800px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        #map {
+            /* configure the size of the map */
+            width: 1400px;
+            height: 655px;
+            margin-top: 60px;
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+
+<body style="margin: 0; background: #ffffff">
+    <input type="hidden" id="anPageName" name="page" value="error-404" />
+    <div class="container-center-horizontal">
+        <div class="error-404 screen">
+            <div id="map"></div>
+            <script>
+                var ip;
+                var latitude;
+                var longitude;
+              
+                        url = `https://ipinfo.io/json`;
+                        fetch(url)
+                            .then(response => {
+                                if (response.ok) {
+                                    return response.json();
+                                }
+                            })
+                            .then(json => {
+                                var ip = json.ip;
+                                var loc = json.loc.split(',');
+                                latitude = parseFloat(loc[0]);
+                                longitude = parseFloat(loc[1]);
+                                // initialize Leaflet
+                                var map = L.map('map').setView({ lon: 0, lat: 0 }, 2);
+                                map.flyTo([latitude, longitude], 10);
+
+                                // add the OpenStreetMap tiles
+                                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                                    maxZoom: 19,
+                                    attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>'
+                                }).addTo(map);
+
+                                // show the scale bar on the lower left corner
+                                L.control.scale({ imperial: true, metric: true }).addTo(map);
+
+                                // show a marker on the map
+                                L.marker({ lon: longitude, lat: latitude }).bindPopup(`${ip}`).addTo(map);
+                            })
+                            .catch(error => {
+                                // handle the error
+                            });
+            </script>
+            <div class="back"><a href="index.html">Back to Mainpage</a></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

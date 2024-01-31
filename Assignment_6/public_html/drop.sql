@@ -1,0 +1,13 @@
+set foreign_key_checks = 0;
+drop table Books;
+drop table Borrows;
+drop table Enrolls;
+drop table Handles;
+drop table Has;
+drop table Holds;
+drop table Librarian;
+drop table Library;
+drop table Members;
+drop table Student;
+drop table Teacher;
+set foreign_key_checks = 1;

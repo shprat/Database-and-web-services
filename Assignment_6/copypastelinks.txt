@@ -1,0 +1,32 @@
+Website: http://clabsql.clamv.jacobs-university.de/~prshah/
+
+Index page: first page displayed when you click the above link it is a navigation page with details about the aims and services of the website
+Link: http://clabsql.clamv.jacobs-university.de/~prshah/index.html
+
+Imprint page: page with author details as well the disclaimer (also shown in footer of the index page) the imprint page is accessible from the index page by clicking hyperlink ‘imprint page’ 
+Link: http://clabsql.clamv.jacobs-university.de/~prshah/imprint.html
+
+CSS file: used for the layout of the website i.e. index.html controlling how the html elements look in the browser
+Link: http://clabsql.clamv.jacobs-university.de/~prshah/style.css
+
+Image folder: contains the images used for design the site
+Link:  http://clabsql.clamv.jacobs-university.de/~prshah/img/
+
+maintenaince page
+http://clabsql.clamv.jacobs-university.de/~prshah/maintenance.html
+
+Entity forms
+member form
+http://clabsql.clamv.jacobs-university.de/~prshah/Members.php
+
+teacher form 
+http://clabsql.clamv.jacobs-university.de/~prshah/teacher.php
+
+relationship forms
+Borrows form
+http://clabsql.clamv.jacobs-university.de/~prshah/borrows.php
+
+Note: please connect to eduroam while visiting these links
+
+
+

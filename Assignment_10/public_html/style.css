@@ -1,0 +1,466 @@
+body{
+    background-color: rgb(126, 113, 98);
+}
+* {box-sizing: border-box;}
+
+/* Style the navbar */
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+/* Style the input container */
+.topnav .search-container {
+  float: right;
+}
+
+/* Style the input field inside the navbar */
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+/* Style the button inside the input container */
+.topnav .search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+/* Add responsiveness - On small screens, display the navbar vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+
+.menu {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+.menu a {
+  background-color:rgba(203, 227, 227, 0.348);
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
+}
+
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+}
+
+.right {
+  background-color: powderblue;
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid rgb(143, 139, 139);
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+form.example button {
+  float: right;
+  width: 10%;
+  height: 10px;
+  padding: 1px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  border-right: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #5f93bd;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/* student.css */
+.student-s {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 900px;
+  width: 1440px;
+}
+
+.student-s .overlap-group1 {
+  align-items: flex-end;
+  background-color: var(--lochmara);
+  display: flex;
+  height: 154px;
+  min-width: 1440px;
+  padding: 19px 30px;
+}
+
+.student-s .student-sign-up {
+  letter-spacing: 0;
+  min-height: 96px;
+  text-align: center;
+  width: 606px;
+}
+
+.student-s .overlap-group {
+  align-items: flex-start;
+  background-image: url(../img/pexels-pixabay-301920-1@1x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 596px;
+  padding: 44px 36px;
+  width: 1440px;
+}
+
+.student-s .name {
+  letter-spacing: 0;
+  min-height: 28px;
+  min-width: 76px;
+  text-align: center;
+}
+
+.student-s .university-name {
+  letter-spacing: 0;
+  margin-top: 72px;
+  min-height: 28px;
+  min-width: 187px;
+  text-align: center;
+}
+
+.student-s .country {
+  letter-spacing: 0;
+  margin-top: 72px;
+  min-height: 28px;
+  min-width: 96px;
+  text-align: center;
+}
+
+.student-s .email-id {
+  letter-spacing: 0;
+  margin-left: 5px;
+  margin-top: 72px;
+  min-height: 28px;
+  min-width: 91px;
+  text-align: center;
+}
+
+.student-s .overlap-group2 {
+  align-items: flex-start;
+  background-color: var(--black);
+  display: flex;
+  min-width: 1440px;
+}
+
+.student-s .rectangle-14 {
+  background-color: var(--black);
+  height: 150px;
+  width: 1440px;
+}
+
+/* teacher screen */
+/* screen - prof-s */
+
+.prof-s {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 900px;
+  width: 1440px;
+}
+
+.prof-s .overlap-group1 {
+  align-items: center;
+  background-color: var(--lochmara);
+  display: flex;
+  height: 154px;
+  min-width: 1440px;
+  padding: 0 35px;
+}
+
+.prof-s .professor-sign-up {
+  letter-spacing: 0;
+  min-height: 96px;
+  text-align: center;
+  width: 606px;
+}
+
+.prof-s .overlap-group {
+  height: 746px;
+  position: relative;
+  width: 1440px;
+}
+
+.prof-s .rectangle-1 {
+  background-color: var(--black);
+  height: 150px;
+  left: 0;
+  position: absolute;
+  top: 596px;
+  width: 1440px;
+}
+
+.prof-s .pexels-pixabay-301926-1 {
+  height: 598px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+
+.prof-s .group-1 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  left: 35px;
+  min-height: 328px;
+  position: absolute;
+  top: 45px;
+  width: 195px;
+}
+
+.prof-s .name {
+  letter-spacing: 0;
+  min-height: 28px;
+  min-width: 76px;
+  text-align: center;
+}
+
+.prof-s .university-name {
+  letter-spacing: 0;
+  margin-top: 72px;
+  min-height: 28px;
+  min-width: 187px;
+  text-align: center;
+}
+
+.prof-s .country {
+  letter-spacing: 0;
+  margin-top: 72px;
+  min-height: 28px;
+  min-width: 96px;
+  text-align: center;
+}
+
+.prof-s .email-id {
+  letter-spacing: 0;
+  margin-left: 5px;
+  margin-top: 72px;
+  min-height: 28px;
+  min-width: 91px;
+  text-align: center;
+}
+/* screen - maintenance-page */
+
+.maintenance-page {
+  align-items: center;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 900px;
+  overflow: hidden;
+  width: 1440px;
+}
+
+.maintenance-page .overlap-group {
+  height: 116px;
+  position: relative;
+  width: 1440px;
+}
+
+.maintenance-page .rectangle-25 {
+  background-color: var(--lochmara);
+  height: 100px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+
+.maintenance-page .text-1 {
+  color: var(--black);
+  font-family: var(--font-family-roboto);
+  font-size: 56px;
+  font-weight: 400;
+  left: 175px;
+  letter-spacing: 0;
+  position: absolute;
+  text-align: center;
+  top: 20px;
+  width: 1046px;
+}
+
+.maintenance-page .text-2 {
+  color: var(--black);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-xl);
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-right: 44.0px;
+  min-height: 33px;
+  text-align: center;
+  width: 728px;
+}
+
+.maintenance-page .entities {
+  letter-spacing: 0;
+  margin-right: 45.0px;
+  margin-top: 13px;
+  min-height: 45px;
+  text-align: center;
+  width: 301px;
+}
+
+.maintenance-page .frame {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  height: 37px;
+  margin-right: 45.0px;
+  padding: 0 211px;
+  width: 515px;
+}
+
+.maintenance-page .place {
+  letter-spacing: 0;
+  min-height: 34px;
+  min-width: 78px;
+  text-align: center;
+}
+
+.maintenance-page .frame-1 {
+  align-items: flex-start;
+  background-color: var(--cerulean-frost);
+  display: flex;
+  height: 37px;
+  margin-right: 45.0px;
+  padding: 0 211px;
+  width: 515px;
+}
+
+.maintenance-page .frame-2 {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  height: 36px;
+  margin-right: 45.0px;
+  padding: 0 211px;
+  width: 515px;
+}
+
+.maintenance-page .frame-24 {
+  align-items: flex-start;
+  background-color: var(--cerulean-frost);
+  display: flex;
+  height: 38px;
+  margin-right: 45.0px;
+  padding: 0 211px;
+  width: 515px;
+}
+
+.maintenance-page .frame-30 {
+  align-items: flex-start;
+  background-color: var(--cerulean-frost);
+  display: flex;
+  height: 36px;
+  margin-right: 45.0px;
+  margin-top: 2px;
+  padding: 0 211px;
+  width: 515px;
+}
+
+.maintenance-page .flex-row {
+  align-items: flex-start;
+  display: flex;
+  height: 206px;
+  margin-top: 46px;
+  min-width: 1440px;
+}
+
+.maintenance-page .whats-app-image-10-19-at-1216-1 {
+  align-self: flex-end;
+  height: 194px;
+  object-fit: cover;
+  width: 513px;
+}
+
+.maintenance-page .frame-33 {
+  background-color: var(--black);
+  height: 203px;
+  width: 927px;
+}
