@@ -1,3 +1,5 @@
+This project's purpose was to design a website and add features each week like forms and queries where we are directly connecting to our database each folder has the description regarding that weeks task
+
 LINKS:
 
 
